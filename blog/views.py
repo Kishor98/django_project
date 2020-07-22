@@ -6,5 +6,5 @@ from .models import Post
 # Create your views here.
 def hello(request):
    #posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
-   return render(request, 'post_list.html')
+   return render(request, 'seva_list.html')
 

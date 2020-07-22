@@ -22,5 +22,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('myapp/', include('myapp.url')),
     path('', include('blog.url')),
+    path('new_item', include('inventory.url')),
     
 ]+static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
