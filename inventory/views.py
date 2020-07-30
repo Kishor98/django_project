@@ -7,7 +7,7 @@ from django.contrib.auth.decorators import permission_required
 from django.shortcuts import get_object_or_404
 from django.urls import reverse
 
-from catalog.forms import RenewBookForm
+#from catalog.forms import RenewBookForm
 
 # Create your views here.
 def new_item(request):
@@ -15,10 +15,10 @@ def new_item(request):
    return render(request, 'new_item.html')
 
 
-
+"""
 @permission_required('catalog.can_mark_returned')
 def add_item(request, pk):
-    """View function for renewing a specific BookInstance by librarian."""
+    View function for renewing a specific BookInstance by librarian.
     book_instance = get_object_or_404(BookInstance, pk=pk)
 
     # If this is a POST request then process the Form data
@@ -47,3 +47,4 @@ def add_item(request, pk):
     }
 
     return render(request, 'catalog/book_renew_librarian.html', context)
+    """
